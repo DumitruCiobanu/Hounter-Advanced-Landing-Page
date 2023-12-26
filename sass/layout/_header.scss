@@ -1,0 +1,44 @@
+header {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  max-width: 144rem;
+
+  @include respond(big-desk) {
+    max-width: 168rem;
+  }
+
+  .nav {
+    margin-bottom: -11.4rem;
+    display: flex;
+    padding: 3.9rem 12.4rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      cursor: pointer;
+
+      @include respond(big-desk) {
+        width: 12rem
+      }
+
+      @include respond(huge-desk) {
+        width: 13rem
+      }
+    }
+
+    &__btns {
+      width: 52rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.4rem;
+
+      &__btn {
+        span {
+          min-width: 7rem;
+        }
+      }
+    }
+  }
+}

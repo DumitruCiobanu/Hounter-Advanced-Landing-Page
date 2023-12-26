@@ -1,0 +1,21 @@
+.tour__contact {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  &__img {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 5.6rem;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    &__name {
+    }
+    &__location {
+    }
+  }
+}
