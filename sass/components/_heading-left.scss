@@ -1,0 +1,21 @@
+.heading-left {
+  display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  &__label-group {
+    margin-left: -4rem;
+    display: flex;
+    gap: .8rem;
+    &__line {
+      width: 3.2rem;
+      height: 0.1rem;
+      background: var(--secondary, #f59e0b);
+      margin-top: .8rem;
+    }
+    &__title {
+      color: var(--secondary, #f59e0b);
+    }
+  }
+  &__heading {
+  }
+}

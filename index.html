@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Hounter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <img class="nav__logo" src="img/logo.svg" alt="Hounter logo" />
+          <div class="nav__btns">
+            <button
+              class="nav__btns__btn btn-dropdown font-label-semibold font-color-white"
+            >
+              <span>about us</span>
+            </button>
+            <button
+              class="nav__btns__btn btn-dropdown font-label-semibold font-color-white"
+            >
+              <span>article</span>
+            </button>
+            <button
+              class="nav__btns__btn btn-dropdown font-label-semibold font-color-white"
+            >
+              <span>property</span>
+              <svg
+                class="nav__btns__btn__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M12.6655 6.75684C12.6658 6.58031 12.6117 6.40924 12.5125 6.27331C12.4567 6.19681 12.3881 6.13357 12.3107 6.08722C12.2333 6.04087 12.1486 6.01231 12.0615 6.00319C11.9744 5.99407 11.8865 6.00456 11.803 6.03405C11.7194 6.06355 11.6418 6.11148 11.5746 6.1751L8.00916 9.55978L4.43709 6.29598C4.36904 6.23322 4.29075 6.18636 4.20671 6.15808C4.12267 6.1298 4.03454 6.12066 3.94738 6.13119C3.86022 6.14172 3.77576 6.17171 3.69884 6.21944C3.62192 6.26717 3.55406 6.33169 3.49916 6.40931C3.43861 6.48747 3.39293 6.57902 3.365 6.67819C3.33707 6.77736 3.32749 6.88201 3.33686 6.98559C3.34623 7.08916 3.37434 7.18942 3.41945 7.28007C3.46455 7.37072 3.52566 7.4498 3.59894 7.51235L7.59009 11.1615C7.70912 11.2726 7.85841 11.3333 8.01249 11.3333C8.16656 11.3333 8.31586 11.2726 8.43489 11.1615L12.426 7.38391C12.5065 7.30812 12.5702 7.21185 12.6118 7.10289C12.6534 6.99394 12.6718 6.87538 12.6655 6.75684Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button
+              class="nav__btns__btn btn-dropdown font-label-semibold font-color-white"
+            >
+              <span>sign up</span>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <div class="cookie-container">
+        <div class="cookie-banner">
+          <div class="cookie-banner__message">
+            <svg
+              class="cookie-banner__message__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.3323 1.95679C18.8813 1.95679 19.3272 2.40489 19.3272 2.95666C19.3272 3.50843 18.8813 3.95653 18.3323 3.95653C17.7834 3.95653 17.3375 3.50843 17.3375 2.95666C17.3392 2.40489 17.7834 1.95679 18.3323 1.95679ZM18.5985 10.6647C19.4569 11.9522 20.5432 12.3468 21.9539 11.4756C22.0005 11.9605 22.0121 12.4554 21.9872 12.9571C21.7094 18.5015 17.0131 22.7702 11.4968 22.491C5.98213 22.2101 1.73508 17.4899 2.01289 11.9472C2.28904 6.40271 7.14828 2.08721 12.663 2.36643C12.1739 3.9047 12.5881 5.27075 13.8324 5.73557C12.7045 9.37724 15.2232 11.7599 18.5985 10.6647ZM6.99523 9.94741C7.82202 9.94741 8.49077 10.6212 8.49077 11.4506C8.49077 12.2799 7.82035 12.9537 6.99523 12.9537C6.16845 12.9537 5.4997 12.2799 5.4997 11.4506C5.4997 10.6212 6.17011 9.94741 6.99523 9.94741ZM11.7064 11.8635C12.1822 11.8635 12.5681 12.2515 12.5681 12.7297C12.5681 13.2079 12.1822 13.5958 11.7064 13.5958C11.2306 13.5958 10.8447 13.2079 10.8447 12.7297C10.843 12.2515 11.229 11.8635 11.7064 11.8635ZM7.96675 15.4317C8.54733 15.4317 9.01811 15.9048 9.01811 16.4884C9.01811 17.0719 8.54733 17.5451 7.96675 17.5451C7.38617 17.5451 6.91538 17.0719 6.91538 16.4884C6.91538 15.9032 7.38617 15.4317 7.96675 15.4317ZM10.2325 7.34573C10.6883 7.34573 11.056 7.71692 11.056 8.17338C11.056 8.63152 10.6867 9.00104 10.2325 9.00104C9.77669 9.00104 9.40905 8.62985 9.40905 8.17338C9.40905 7.71692 9.77836 7.34573 10.2325 7.34573ZM14.7075 15.8012C15.471 15.8012 16.0882 16.4232 16.0882 17.189C16.0882 17.9564 15.4694 18.5767 14.7075 18.5767C13.9439 18.5767 13.3267 17.9547 13.3267 17.189C13.3267 16.4232 13.9456 15.8012 14.7075 15.8012ZM17.6154 5.81917C18.1277 5.81917 18.5436 6.23718 18.5436 6.75216C18.5436 7.26715 18.1277 7.68515 17.6154 7.68515C17.103 7.68515 16.6871 7.26715 16.6871 6.75216C16.6871 6.23718 17.103 5.81917 17.6154 5.81917Z"
+                fill="#0B9567"
+              />
+            </svg>
+            <p
+              class="cookie-banner__message__text font-body-semibold font-color-primary-dark"
+            >
+              We are using cookies
+            </p>
+          </div>
+          <button class="cookie-banner__btn-close-cookie">
+            <svg
+              class="cookie-banner__btn-close-cookie__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M4.92896 4.92896L19.0711 19.0711"
+                stroke="#1B1C57"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.071 4.92896L4.92891 19.0711"
+                stroke="#1B1C57"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <section class="hero-section">
+        <img
+        class="hero-section__blur-bg"
+        src="img/blur-bg.png"
+        alt="Blur background image"
+      />
+
+        <div class="hero-section__content">
+          <div class="left-side">
+
+            <div class="text-group">
+              <p class="text-group__title font-heading-1">
+                find the place to<br />live
+                <span class="font-primary">your dreams<br /></span>
+                easily here
+              </p>
+              <p class="text-group__subtitle font-body-light">
+                Everything you need about finding your place to live will be here,
+                where it will be easier for you
+              </p>
+  
+              <div class="text-group__search input-complex">
+                <img
+                  class="text-group__search__icon"
+                  src="img/input-group-location-pin-secondary.svg"
+                  alt="Yellow location pin icon"
+                />
+                <input
+                  class="text-group__search__input font-placeholder"
+                  type="text"
+                  placeholder="Search for the location you want!"
+                />
+                <button class="text-group__search__btn btn-primary">
+                  <div class="font-btn font-color-white"><span>Search</span></div>
+                  <svg
+                    class="text-group__search__btn__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.1353 5.0018C9.87047 5.00135 9.61386 5.08254 9.40997 5.2313C9.29522 5.31506 9.20036 5.41793 9.13083 5.53402C9.0613 5.65011 9.01847 5.77714 9.00479 5.90782C8.9911 6.03851 9.00683 6.17029 9.05108 6.29562C9.09533 6.42094 9.16722 6.53735 9.26265 6.63818L14.3397 11.9863L9.44397 17.3444C9.34983 17.4465 9.27953 17.5639 9.23711 17.69C9.19469 17.8161 9.18099 17.9482 9.19679 18.079C9.21258 18.2097 9.25757 18.3364 9.32916 18.4518C9.40075 18.5672 9.49754 18.669 9.61396 18.7513C9.73121 18.8421 9.86853 18.9107 10.0173 18.9526C10.166 18.9945 10.323 19.0088 10.4784 18.9948C10.6337 18.9807 10.7841 18.9385 10.9201 18.8709C11.0561 18.8032 11.1747 18.7116 11.2685 18.6016L16.7422 12.6149C16.9089 12.4364 17 12.2124 17 11.9813C17 11.7502 16.9089 11.5263 16.7422 11.3477L11.0759 5.36101C10.9622 5.24026 10.8178 5.14481 10.6543 5.0824C10.4909 5.01999 10.3131 4.99238 10.1353 5.0018Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+  
+              <div class="partners-group">
+                <div class="partners-group__title font-body-light">
+                  Our Partnership
+                </div>
+                <div class="partners-group__logos">
+                  <img
+                    class="partners-group__logos__logo"
+                    src="img/traveloka-logo-2.png"
+                    alt="Traveloka logo"
+                  />
+                  <img
+                    class="partners-group__logos__logo"
+                    src="img/traveloka-logo-5.png"
+                    alt="Tiket.com logo"
+                  />
+                  <img
+                    class="partners-group__logos__logo"
+                    src="img/traveloka-logo-3.png"
+                    alt="Airbnb logo"
+                  />
+                  <img
+                    class="partners-group__logos__logo"
+                    src="img/traveloka-logo-4.png"
+                    alt="Tripadvisor logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+
+        <div class="right-side">
+          <div
+            class="right-side__img-group"
+            style="background-image: url(img/image-6-home-bg.png)"
+          >
+            <img
+              class="right-side__img-group__lines-group"
+              src="img/group-9(lines).png"
+              alt="A group of colorful lines matching the shapes of the house on the background image"
+            />
+          </div>
+  
+          <div class="stats">
+            <div class="stats__item">
+              <div class="stats__item__avatars">
+                <img
+                  class="stats__item__avatar"
+                  src="img/client-1.jpeg"
+                  alt="Client avatar"
+                />
+                <img
+                  class="stats__item__avatar"
+                  src="img/client-2.jpeg"
+                  alt="Client avatar"
+                />
+                <img
+                  class="stats__item__avatar"
+                  src="img/client-3.jpeg"
+                  alt="Client avatar"
+                />
+              </div>
+              <div class="stats__item__info">
+                <div class="stats__item__info__count font-body-semibold">
+                  1K+ People
+                </div>
+                <div class="stats__item__info__description font-label-small">
+                  Successfully Getting Home
+                </div>
+              </div>
+            </div>
+  
+            <div class="stats__item">
+              <img
+                class="stats__item__avatar"
+                src="img/rectangle-12.png"
+                alt="House image avatar"
+              />
+              <div class="stats__item__info">
+                <div class="stats__item__info__count font-body-semibold">
+                  56 Houses
+                </div>
+                <div class="stats__item__info__description font-label-small">
+                  Sold Monthly
+                </div>
+              </div>
+            </div>
+  
+            <div class="stats__item">
+              <img
+                class="stats__item__avatar"
+                src="img/ellipse-6.jpeg"
+                alt="Client avatar"
+              />
+              <div class="stats__item__info">
+                <div class="stats__item__info__count font-body-semibold">
+                  4K+
+                </div>
+                <div class="stats__item__info__description font-label-small">
+                  People Looking for New Homes
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="pagination">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="8" viewBox="0 0 56 8" fill="none">
+              <circle class="hero-dot" cx="4" cy="4" r="4" fill="#E0E3EB"/>
+            <circle class="hero-dot" cx="28" cy="4" r="4" fill="#E0E3EB"/>
+            <circle class="hero-dot" cx="52" cy="4" r="4" fill="#E0E3EB"/>
+            </svg>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="featured-house-section">
+        <div class="heading-group">
+          <div class="heading-left">
+            <div class="heading-left__label-group">
+              <div class="heading-left__label-group__line"></div>
+              <p class="heading-left__label-group__title font-label">
+                Our Recommendation
+              </p>
+            </div>
+            <h2 class="heading-left__heading font-heading-2">Featured House</h2>
+          </div>
+
+          <div class="categories">
+            <button class="categories__btn btn-outline">
+              <div class="categories__btn__group">
+                <svg
+                  class="categories__btn__group__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M21 10.8319V19.5C20.9999 19.7719 20.9262 20.0386 20.7868 20.272C20.6475 20.5054 20.4476 20.6968 20.2084 20.8259C19.9917 20.9432 19.7485 21.0031 19.5021 20.9999H14.9968C14.7978 20.9999 14.6071 20.9209 14.4664 20.7803C14.3258 20.6396 14.2468 20.4488 14.2468 20.2499V15.7493C14.2468 15.5504 14.1677 15.3596 14.0271 15.2189C13.8864 15.0783 13.6957 14.9993 13.4968 14.9993H10.4968C10.2978 14.9993 10.1071 15.0783 9.96643 15.2189C9.82577 15.3596 9.74676 15.5504 9.74676 15.7493V20.2499C9.74676 20.4488 9.66774 20.6396 9.52709 20.7803C9.38644 20.9209 9.19567 20.9999 8.99676 20.9999H4.50023C4.28758 21.0005 4.07726 20.9556 3.88338 20.8682C3.68951 20.7808 3.51654 20.653 3.37607 20.4934C3.12949 20.2082 2.99574 19.8427 3.00004 19.4657V10.8318C3.0002 10.6228 3.04395 10.4162 3.12849 10.225C3.21302 10.0339 3.33649 9.86251 3.49101 9.7218L10.9904 2.90308C11.2658 2.65075 11.6258 2.51078 11.9994 2.51074C12.373 2.51071 12.733 2.65062 13.0085 2.90289L20.5092 9.72189C20.6636 9.86263 20.7871 10.034 20.8716 10.2252C20.9561 10.4163 20.9999 10.6229 21 10.8319Z"
+                    fill="#0B9567"
+                  /></svg
+                ><span
+                  class="categories__btn__group__text font-btn font-color-primary-dark"
+                  >House</span
+                >
+              </div>
+            </button>
+
+            <button class="categories__btn btn-outline">
+              <div class="categories__btn__group">
+                <svg
+                  class="categories__btn__group__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M7 21H4C3.45 21 3 20.55 3 20V8.69C3 8.27 3.25 7.9 3.64 7.75L14.64 3.52C14.7921 3.46132 14.9561 3.4407 15.118 3.45992C15.2798 3.47915 15.4345 3.53765 15.5686 3.63031C15.7027 3.72298 15.8121 3.84702 15.8873 3.99162C15.9624 4.13623 16.0012 4.29702 16 4.46V10H8C7.45 10 7 10.45 7 11V21ZM17 12H10C9.45 12 9 12.45 9 13V20C9 20.55 9.45 21 10 21H14V17C14 16.45 14.45 16 15 16C15.55 16 16 16.45 16 17V21H20C20.55 21 21 20.55 21 20V12C21 10.9 20.1 10 19 10C17.9 10 17 10.9 17 12Z"
+                    fill="#0B9567"
+                  /></svg
+                ><span
+                  class="categories__btn__group__text font-btn font-color-primary-dark"
+                  >Villa</span
+                >
+              </div>
+            </button>
+
+            <button class="categories__btn btn-outline">
+              <div class="categories__btn__group">
+                <svg
+                  class="categories__btn__group__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M17 11V5C17 3.9 16.1 3 15 3H9C7.9 3 7 3.9 7 5V7H5C3.9 7 3 7.9 3 9V19C3 20.1 3.9 21 5 21H11V17H13V21H19C20.1 21 21 20.1 21 19V13C21 11.9 20.1 11 19 11H17ZM7 19H5V17H7V19ZM7 15H5V13H7V15ZM7 11H5V9H7V11ZM11 15H9V13H11V15ZM11 11H9V9H11V11ZM11 7H9V5H11V7ZM15 15H13V13H15V15ZM15 11H13V9H15V11ZM15 7H13V5H15V7ZM19 19H17V17H19V19ZM19 15H17V13H19V15Z"
+                    fill="#0B9567"
+                  /></svg
+                ><span
+                  class="categories__btn__group__text font-btn font-color-primary-dark"
+                  >Apartment</span
+                >
+              </div>
+            </button>
+          </div>
+
+          <div class="slider-btns">
+            <button class="slider-btns__left btn-outline-arrow">
+              <svg
+                class="slider-btns__left__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M13.8647 5.0018C14.1295 5.00135 14.3861 5.08254 14.59 5.2313C14.7048 5.31506 14.7996 5.41793 14.8692 5.53402C14.9387 5.65011 14.9815 5.77714 14.9952 5.90782C15.0089 6.03851 14.9932 6.17029 14.9489 6.29562C14.9047 6.42094 14.8328 6.53735 14.7374 6.63818L9.66033 11.9863L14.556 17.3444C14.6502 17.4465 14.7205 17.5639 14.7629 17.69C14.8053 17.8161 14.819 17.9482 14.8032 18.079C14.7874 18.2097 14.7424 18.3364 14.6708 18.4518C14.5992 18.5672 14.5025 18.669 14.386 18.7513C14.2688 18.8421 14.1315 18.9107 13.9827 18.9526C13.834 18.9945 13.677 19.0088 13.5216 18.9948C13.3663 18.9807 13.2159 18.9385 13.0799 18.8709C12.9439 18.8032 12.8253 18.7116 12.7315 18.6016L7.2578 12.6149C7.09112 12.4364 7 12.2124 7 11.9813C7 11.7502 7.09112 11.5263 7.2578 11.3477L12.9241 5.36101C13.0378 5.24026 13.1822 5.14481 13.3457 5.0824C13.5091 5.01999 13.6869 4.99238 13.8647 5.0018Z"
+                  fill="#10B981"
+                />
+              </svg>
+            </button>
+
+            <button class="slider-btns__right btn-outline-arrow">
+              <svg
+                class="slider-btns__right__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M10.1353 5.0018C9.87047 5.00135 9.61386 5.08254 9.40997 5.2313C9.29522 5.31506 9.20036 5.41793 9.13083 5.53402C9.0613 5.65011 9.01847 5.77714 9.00479 5.90782C8.9911 6.03851 9.00683 6.17029 9.05108 6.29562C9.09533 6.42094 9.16722 6.53735 9.26265 6.63818L14.3397 11.9863L9.44397 17.3444C9.34983 17.4465 9.27953 17.5639 9.23711 17.69C9.19469 17.8161 9.18099 17.9482 9.19679 18.079C9.21258 18.2097 9.25757 18.3364 9.32916 18.4518C9.40075 18.5672 9.49754 18.669 9.61396 18.7513C9.73121 18.8421 9.86853 18.9107 10.0173 18.9526C10.166 18.9945 10.323 19.0088 10.4784 18.9948C10.6337 18.9807 10.7841 18.9385 10.9201 18.8709C11.0561 18.8032 11.1747 18.7116 11.2685 18.6016L16.7422 12.6149C16.9089 12.4364 17 12.2124 17 11.9813C17 11.7502 16.9089 11.5263 16.7422 11.3477L11.0759 5.36101C10.9622 5.24026 10.8178 5.14481 10.6543 5.0824C10.4909 5.01999 10.3131 4.99238 10.1353 5.0018Z"
+                  fill="#10B981"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="featured-house-section__content">
+
+  
+          <div class="houses-slider">
+      
+            <div class="house-card">
+              <div
+                class="house-card__img-frame"
+                style="background-image: url(img/roseland.jpeg)"
+              ></div>
+              <button class="house-card__label label-danger">
+                <svg
+                  class="house-card__label__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0328 7.33125C12.7295 6.64853 12.2885 6.03575 11.7375 5.53125L11.2828 5.11406C11.2674 5.10029 11.2488 5.09051 11.2287 5.08559C11.2086 5.08067 11.1876 5.08076 11.1675 5.08585C11.1475 5.09095 11.129 5.10088 11.1137 5.11479C11.0984 5.1287 11.0867 5.14615 11.0797 5.16563L10.8766 5.74844C10.75 6.11406 10.5172 6.4875 10.1875 6.85469C10.1656 6.87813 10.1406 6.88438 10.1234 6.88594C10.1063 6.8875 10.0797 6.88438 10.0562 6.8625C10.0344 6.84375 10.0234 6.81563 10.025 6.7875C10.0828 5.84688 9.80156 4.78594 9.18594 3.63125C8.67656 2.67188 7.96875 1.92344 7.08437 1.40156L6.43906 1.02188C6.35469 0.971876 6.24688 1.0375 6.25156 1.13594L6.28594 1.88594C6.30937 2.39844 6.25 2.85156 6.10938 3.22813C5.9375 3.68906 5.69062 4.11719 5.375 4.50156C5.15535 4.76869 4.90639 5.01031 4.63281 5.22188C3.97391 5.72838 3.43815 6.3774 3.06562 7.12031C2.69402 7.86971 2.50045 8.69478 2.5 9.53125C2.5 10.2688 2.64531 10.9828 2.93281 11.6563C3.21042 12.3046 3.61103 12.8931 4.1125 13.3891C4.61875 13.8891 5.20625 14.2828 5.86094 14.5563C6.53906 14.8406 7.25781 14.9844 8 14.9844C8.74219 14.9844 9.46094 14.8406 10.1391 14.5578C10.7921 14.286 11.386 13.8895 11.8875 13.3906C12.3938 12.8906 12.7906 12.3063 13.0672 11.6578C13.3543 10.9862 13.5015 10.2632 13.5 9.53281C13.5 8.77031 13.3438 8.02969 13.0328 7.33125Z"
+                    fill="#EF4444"
+                  /></svg
+                ><span
+                  class="house-card__label__text font-label-medium font-color-danger"
+                  >Popular</span
+                >
+              </button>
+  
+              <div class="house-card__info">
+                <div class="house-card__info__house">
+                  <h3 class="house-card__info__house__name font-heading-3">
+                    Roselands House
+                  </h3>
+                  <h4
+                    class="house-card__info__house__price font-heading-4 font-color-grey-3"
+                  >
+                    $ 35.000.000
+                  </h4>
+                </div>
+                <div class="info__contact">
+                  <img
+                    src="img/client-4.jpeg"
+                    alt="Contact avatar"
+                    class="info__contact__img"
+                  />
+                  <div class="info__contact__data">
+                    <p class="info__contact__data__name font-subtitle">
+                      Dianne Russell
+                    </p>
+                    <p
+                      class="info__contact__data__location font-label font-color-grey-2"
+                    >
+                      Manchester, Kentucky
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="house-card">
+              <div
+                class="house-card__img-frame"
+                style="background-image: url(img/woodlandside.jpeg)"
+              ></div>
+              <button class="house-card__label label-info">
+                <svg
+                  class="house-card__label__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M14 7.22126V13C13.9999 13.1812 13.9508 13.3591 13.8579 13.5147C13.765 13.6703 13.6317 13.7979 13.4723 13.8839C13.3278 13.9622 13.1657 14.0021 13.0014 13.9999H9.99782C9.86521 13.9999 9.73803 13.9473 9.64426 13.8535C9.5505 13.7597 9.49782 13.6326 9.49782 13.4999V10.4995C9.49782 10.3669 9.44514 10.2397 9.35137 10.146C9.2576 10.0522 9.13043 9.99951 8.99782 9.99951H6.99782C6.86521 9.99951 6.73803 10.0522 6.64426 10.146C6.5505 10.2397 6.49782 10.3669 6.49782 10.4995V13.4999C6.49782 13.6326 6.44514 13.7597 6.35137 13.8535C6.2576 13.9473 6.13043 13.9999 5.99782 13.9999H3.00013C2.85836 14.0003 2.71816 13.9704 2.5889 13.9121C2.45965 13.8539 2.34434 13.7687 2.25069 13.6623C2.08631 13.4721 1.99714 13.2285 2.00001 12.9771V7.2212C2.00011 7.08187 2.02928 6.9441 2.08564 6.81669C2.142 6.68927 2.22431 6.57501 2.32732 6.4812L7.32688 1.93539C7.51053 1.76717 7.75053 1.67385 7.99957 1.67383C8.24862 1.6738 8.48864 1.76708 8.67232 1.93526L13.6728 6.48126C13.7757 6.57509 13.858 6.68935 13.9144 6.81677C13.9707 6.94418 13.9999 7.08194 14 7.22126Z"
+                    fill="#1D4ED8"
+                  /></svg
+                ><span
+                  class="house-card__label__text font-label-medium font-color-info"
+                  >New house</span
+                >
+              </button>
+  
+              <div class="house-card__info">
+                <div class="house-card__info__house">
+                  <h3 class="house-card__info__house__name font-heading-3">
+                    Woodlandside
+                  </h3>
+                  <h4
+                    class="house-card__info__house__price font-heading-4 font-color-grey-3"
+                  >
+                    $ 20.000.000
+                  </h4>
+                </div>
+                <div class="info__contact">
+                  <img
+                    src="img/client-5.jpeg"
+                    alt="Contact avatar"
+                    class="info__contact__img"
+                  />
+                  <div class="info__contact__data">
+                    <p class="info__contact__data__name font-subtitle">
+                      Robert Fox
+                    </p>
+                    <p
+                      class="info__contact__data__location font-label font-color-grey-2"
+                    >
+                      Dr. San Jose, South Dakota
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="house-card">
+              <div
+                class="house-card__img-frame"
+                style="background-image: url(img/lighthouse.jpeg)"
+              ></div>
+              <button class="house-card__label label-primary-light">
+                <svg
+                  class="house-card__label__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M12.8 4.79999H2.79998V4.39999L11.6 3.69599V4.39999H12.8V3.19999C12.8 2.31999 12.0872 1.70239 11.2168 1.82639L3.18398 2.97359C2.31278 3.09839 1.59998 3.91999 1.59998 4.79999V12.8C1.59998 13.2243 1.76855 13.6313 2.0686 13.9314C2.36866 14.2314 2.77563 14.4 3.19998 14.4H12.8C13.2243 14.4 13.6313 14.2314 13.9313 13.9314C14.2314 13.6313 14.4 13.2243 14.4 12.8V6.39999C14.4 5.97564 14.2314 5.56868 13.9313 5.26862C13.6313 4.96856 13.2243 4.79999 12.8 4.79999ZM11.6 10.4048C11.4423 10.4047 11.2863 10.3736 11.1406 10.3133C10.995 10.2529 10.8627 10.1644 10.7513 10.0529C10.6399 9.94141 10.5515 9.80905 10.4912 9.66339C10.4309 9.51773 10.3999 9.36163 10.4 9.20399C10.4 9.04635 10.4311 8.89027 10.4915 8.74465C10.5519 8.59903 10.6403 8.46673 10.7518 8.3553C10.8634 8.24387 10.9957 8.15549 11.1414 8.09521C11.287 8.03493 11.4431 8.00394 11.6008 8.00399C11.9191 8.0041 12.2244 8.13067 12.4495 8.35586C12.6745 8.58105 12.8009 8.88642 12.8008 9.20479C12.8007 9.52315 12.6741 9.82844 12.4489 10.0535C12.2237 10.2785 11.9183 10.4049 11.6 10.4048Z"
+                    fill="#0B9567"
+                  /></svg
+                ><span
+                  class="house-card__label__text font-label-medium font-color-primary-dark"
+                  >Best deals</span
+                >
+              </button>
+  
+              <div class="house-card__info">
+                <div class="house-card__info__house">
+                  <h3 class="house-card__info__house__name font-heading-3">
+                    The Old Lighthouse
+                  </h3>
+                  <h4
+                    class="house-card__info__house__price font-heading-4 font-color-grey-3"
+                  >
+                    $ 44.000.000
+                  </h4>
+                </div>
+                <div class="info__contact">
+                  <img
+                    src="img/client-6.jpeg"
+                    alt="Contact avatar"
+                    class="info__contact__img"
+                  />
+                  <div class="info__contact__data">
+                    <p class="info__contact__data__name font-subtitle">
+                      Ronald Richards
+                    </p>
+                    <p
+                      class="info__contact__data__location font-label font-color-grey-2"
+                    >
+                      Santa Ana, Illinois
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="house-card">
+              <div
+                class="house-card__img-frame"
+                style="background-image: url(img/cosmo.jpeg)"
+              ></div>
+              <button class="house-card__label label-danger">
+                <svg
+                  class="house-card__label__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0328 7.33125C12.7295 6.64853 12.2885 6.03575 11.7375 5.53125L11.2828 5.11406C11.2674 5.10029 11.2488 5.09051 11.2287 5.08559C11.2086 5.08067 11.1876 5.08076 11.1675 5.08585C11.1475 5.09095 11.129 5.10088 11.1137 5.11479C11.0984 5.1287 11.0867 5.14615 11.0797 5.16563L10.8766 5.74844C10.75 6.11406 10.5172 6.4875 10.1875 6.85469C10.1656 6.87813 10.1406 6.88438 10.1234 6.88594C10.1063 6.8875 10.0797 6.88438 10.0562 6.8625C10.0344 6.84375 10.0234 6.81563 10.025 6.7875C10.0828 5.84688 9.80156 4.78594 9.18594 3.63125C8.67656 2.67188 7.96875 1.92344 7.08437 1.40156L6.43906 1.02188C6.35469 0.971876 6.24688 1.0375 6.25156 1.13594L6.28594 1.88594C6.30937 2.39844 6.25 2.85156 6.10938 3.22813C5.9375 3.68906 5.69062 4.11719 5.375 4.50156C5.15535 4.76869 4.90639 5.01031 4.63281 5.22188C3.97391 5.72838 3.43815 6.3774 3.06562 7.12031C2.69402 7.86971 2.50045 8.69478 2.5 9.53125C2.5 10.2688 2.64531 10.9828 2.93281 11.6563C3.21042 12.3046 3.61103 12.8931 4.1125 13.3891C4.61875 13.8891 5.20625 14.2828 5.86094 14.5563C6.53906 14.8406 7.25781 14.9844 8 14.9844C8.74219 14.9844 9.46094 14.8406 10.1391 14.5578C10.7921 14.286 11.386 13.8895 11.8875 13.3906C12.3938 12.8906 12.7906 12.3063 13.0672 11.6578C13.3543 10.9862 13.5015 10.2632 13.5 9.53281C13.5 8.77031 13.3438 8.02969 13.0328 7.33125Z"
+                    fill="#EF4444"
+                  /></svg
+                ><span
+                  class="house-card__label__text font-label-medium font-color-danger"
+                  >Popular</span
+                >
+              </button>
+  
+              <div class="house-card__info">
+                <div class="house-card__info__house">
+                  <h3 class="house-card__info__house__name font-heading-3">
+                    Cosmo's House
+                  </h3>
+                  <h4
+                    class="house-card__info__house__price font-heading-4 font-color-grey-3"
+                  >
+                    $ 22.000.000
+                  </h4>
+                </div>
+                <div class="info__contact">
+                  <img
+                    src="img/client-7.jpeg"
+                    alt="Contact avatar"
+                    class="info__contact__img"
+                  />
+                  <div class="info__contact__data">
+                    <p class="info__contact__data__name font-subtitle">
+                      Jenny Wilson
+                    </p>
+                    <p
+                      class="info__contact__data__location font-label font-color-grey-2"
+                    >
+                      Preston Rd. Inglewood, Maine 98380
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="tour-section">
+        <img
+        class="tour-section__blur-bg"
+        src="img/blur-bg-tour.svg"
+        alt="Blur bg element"
+      />
+      <div class="tour-section__content">
+        <div class="info-group">
+          <div class="heading-left">
+            <div class="heading-left__label-group">
+              <div class="heading-left__label-group__line"></div>
+              <p class="heading-left__label-group__title font-label">
+                Ready to Sell!
+              </p>
+            </div>
+            <h2 class="heading-left__heading font-heading-2">
+              Let’s tour and see our house!
+            </h2>
+          </div>
+
+          <p class="info-group__description font-body-light font-color-grey-2">
+            Houses recommended by our partners that have been curated to become
+            the home of your dreams!
+          </p>
+
+          <div class="info-group__house-details">
+            <p class="info-group__house-details__title font-body-semibold">
+              House Detail
+            </p>
+            <div class="info-group__house-details__rows">
+              <div class="info-group__house-details__rows__row">
+                <div class="info-group__house-details__rows__row__detail">
+                  <div
+                    class="info-group__house-details__rows__row__detail__icons"
+                  >
+                    <svg
+                      class="info-group__house-details__rows__row__detail__icons__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.8 14.7692C26.0713 14.7692 28 16.6618 28 19.0769V22.7692H26.2V24H25V22.7692H7V24H5.8V22.7692H4V19.0769C4 16.7474 5.86341 14.7692 8.2 14.7692H23.8ZM22.6 8C24.2133 8 25.6004 9.33021 25.6 11.0769L25.6004 14.017C25.0548 13.7102 24.4443 13.5385 23.8 13.5385L22.6 13.5378C22.6 12.4839 21.7586 11.6923 20.8 11.6923H17.2C16.739 11.6923 16.3185 11.87 16.0001 12.1623C15.682 11.8703 15.2613 11.6923 14.8 11.6923H11.2C10.2061 11.6923 9.40033 12.5185 9.4 13.5378L8.2 13.5385C7.55587 13.5385 6.9456 13.7101 6.4 14.0167V11.0769C6.4 9.4223 7.69394 8 9.4 8H22.6ZM14.8 12.9228C15.1256 12.9228 15.4 13.2305 15.4 13.5385L10.6 13.5378C10.6 13.1613 10.8923 12.9231 11.2 12.9231L14.8 12.9228ZM20.8 12.9272C21.1395 12.9228 21.3997 13.2225 21.4 13.5378H16.6C16.6 13.156 16.8923 12.9231 17.2 12.9231L20.8 12.9272Z"
+                        fill="#626687"
+                      />
+                    </svg>
+                  </div>
+
+                  <p
+                    class="info-group__house-details__rows__row__detail__text font-body-medium font-color-grey-3"
+                  >
+                    4 Bedrooms
+                  </p>
+                </div>
+                <div class="info-group__house-details__rows__row__detail">
+                  <div
+                    class="info-group__house-details__rows__row__detail__icons"
+                  >
+                    <svg
+                      class="info-group__house-details__rows__row__detail__icons__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.0391 11.9553H1.96091C1.13081 11.9553 0.455322 12.6308 0.455322 13.4609C0.455322 14.291 1.13081 14.9665 1.96091 14.9665H23.0391C23.8692 14.9665 24.5447 14.291 24.5447 13.4609C24.5447 12.6308 23.8692 11.9553 23.0391 11.9553Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M23.1775 13.9819C22.9055 13.9056 22.6325 14.0602 22.5572 14.3272L22.5181 14.4647H2.48276L2.44263 14.3272C2.36735 14.0602 2.09234 13.9076 1.82233 13.9819C1.55532 14.0581 1.40175 14.3362 1.47807 14.6022L2.86118 19.4441C3.28975 20.9447 4.67894 21.9925 6.23872 21.9925H18.7601C20.3209 21.9925 21.7091 20.9447 22.1377 19.4441L23.5208 14.6022C23.5981 14.3361 23.4435 14.0581 23.1775 13.9819ZM6.23971 19.9851C5.57123 19.9851 4.97502 19.5364 4.79233 18.893L4.14093 16.6106C4.06466 16.3436 4.21922 16.0665 4.48519 15.9903C4.75417 15.914 5.03021 16.0695 5.10549 16.3356L5.75689 18.618C5.81913 18.8318 6.01684 18.9824 6.23966 18.9824C6.51669 18.9824 6.74154 19.2072 6.74154 19.4842C6.74159 19.7613 6.51674 19.9851 6.23971 19.9851Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M7.20335 21.041C6.95545 20.9196 6.65532 21.0169 6.52984 21.2659L5.52613 23.2733C5.40267 23.5212 5.50303 23.8224 5.75098 23.9468C5.82423 23.983 5.90055 24.0001 5.97583 24.0001C6.15951 24.0001 6.33618 23.8987 6.42449 23.722L7.4282 21.7146C7.55166 21.4666 7.45125 21.1655 7.20335 21.041Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M19.4738 23.2743L18.4701 21.2669C18.3456 21.0179 18.0445 20.9185 17.7966 21.042C17.5487 21.1665 17.4483 21.4676 17.5717 21.7155L18.5754 23.723C18.6637 23.8986 18.8404 24 19.0241 24C19.0994 24 19.1756 23.9829 19.2489 23.9478C19.4969 23.8233 19.5972 23.5222 19.4738 23.2743Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M20.6151 0C20.1032 0 19.6214 0.199725 19.2591 0.5621L17.6662 2.15501C17.4705 2.35073 17.4705 2.66893 17.6662 2.86465C17.8619 3.06038 18.1801 3.06038 18.3758 2.86465L19.9687 1.27274C20.1403 1.10011 20.3702 1.00474 20.6201 1.00474C21.124 1.00474 21.5335 1.41426 21.5335 1.91811V12.4572C21.5335 12.7342 21.7583 12.9591 22.0354 12.9591C22.3124 12.9591 22.5372 12.7342 22.5382 12.4562V1.91713C22.5383 0.860206 21.6791 0 20.6151 0Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M18.8776 2.65687L17.8739 1.65317C17.7594 1.53874 17.5998 1.48553 17.4372 1.51263L14.9279 1.92417C14.7433 1.95428 14.5917 2.08475 14.5325 2.26142C14.4733 2.43809 14.5184 2.63481 14.6489 2.76829L17.6601 5.86979C17.7555 5.96916 17.8869 6.02237 18.0194 6.02237C18.0666 6.02237 18.1148 6.01536 18.1619 6.00129C18.3406 5.94911 18.4761 5.80157 18.5122 5.61887L19.0141 3.10958C19.0472 2.94594 18.996 2.77628 18.8776 2.65687Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M12.3525 6.08054C12.1567 5.88482 11.8385 5.88482 11.6428 6.08054L10.6391 7.08425C10.4434 7.27998 10.4434 7.59817 10.6391 7.7939C10.7375 7.89124 10.8659 7.94046 10.9944 7.94046C11.1229 7.94046 11.2514 7.89129 11.3488 7.7939L12.3525 6.79019C12.5482 6.59442 12.5482 6.27627 12.3525 6.08054Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M14.3598 8.08796C14.1641 7.89223 13.8459 7.89223 13.6502 8.08796L12.6465 9.09167C12.4508 9.28739 12.4508 9.60559 12.6465 9.80131C12.7449 9.89866 12.8733 9.94787 13.0018 9.94787C13.1303 9.94787 13.2587 9.89871 13.3561 9.80131L14.3598 8.79761C14.5556 8.60188 14.5556 8.28368 14.3598 8.08796Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M15.3636 5.07679C15.1679 4.88106 14.8497 4.88106 14.654 5.07679L13.6503 6.0805C13.4545 6.27622 13.4545 6.59442 13.6503 6.79015C13.7487 6.88749 13.8771 6.93671 14.0056 6.93671C14.1341 6.93671 14.2625 6.88754 14.3599 6.79015L15.3636 5.78644C15.5594 5.59071 15.5594 5.27252 15.3636 5.07679Z"
+                        fill="#626687"
+                      />
+                    </svg>
+                  </div>
+
+                  <p
+                    class="info-group__house-details__rows__row__detail__text font-body-medium font-color-grey-3"
+                  >
+                    2 Bathrooms
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-group__house-details__rows__row">
+                <div class="info-group__house-details__rows__row__detail">
+                  <div
+                    class="info-group__house-details__rows__row__detail__icons"
+                  >
+                    <svg
+                      class="info-group__house-details__rows__row__detail__icons__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.3838 6.62854L13.357 0.379265C12.5309 -0.130859 11.4665 -0.125643 10.6453 0.390218L0.608163 6.63376C-0.0150927 7.02548 -0.187308 7.82509 0.222729 8.41971C0.633312 9.01433 1.47088 9.17916 2.09468 8.78692L12.0105 2.61849L21.9142 8.79213C22.1417 8.93244 22.3959 8.99868 22.6474 8.99868C23.0913 8.99868 23.5243 8.79161 23.7829 8.41084C24.1886 7.81309 24.0092 7.01609 23.3838 6.62854Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M20.2107 14.7531C20.1341 14.3031 19.7525 13.9702 19.3075 13.9702H18.7961L18.6017 11.8962C18.3942 9.67811 16.5985 7.99997 14.4248 7.99997H9.5761C7.4019 7.99997 5.60672 9.67863 5.39869 11.8962L5.20486 13.9702H4.69289C4.2474 13.9702 3.86634 14.3031 3.78871 14.7531L3.02761 19.1768C2.93323 19.7251 3.08444 20.2895 3.43353 20.715C3.76943 21.1249 4.26414 21.3694 4.78169 21.3876V22.1221C4.78169 23.1619 5.59454 24 6.60985 24H7.18727C8.20156 24 9.02659 23.1619 9.02659 22.1221V21.3995H14.9794V22.1205C14.9794 23.1609 15.7978 24 16.8121 24H17.39C18.4043 24 19.2238 23.1609 19.2238 22.1205V21.3876C19.7413 21.3694 20.233 21.127 20.5679 20.7176C20.917 20.291 21.0662 19.7297 20.9728 19.1804L20.2107 14.7531ZM6.39065 19.6933C5.53467 19.6933 4.84055 18.9822 4.84055 18.1036C4.84055 17.225 5.53467 16.5134 6.39065 16.5134C7.24714 16.5134 7.94177 17.2245 7.94177 18.1036C7.94177 18.9822 7.24714 19.6933 6.39065 19.6933ZM6.77729 13.9702L6.9564 12.0569C7.0868 10.6659 8.21272 9.61828 9.5761 9.61828H9.85568V10.2196C9.85568 10.7414 10.2601 11.157 10.7685 11.157H13.2324C13.7408 11.157 14.1523 10.7414 14.1523 10.2196V9.6188H14.4248C15.7882 9.6188 16.9141 10.6665 17.044 12.0575L17.2236 13.9707L6.77729 13.9702ZM17.6082 19.6933C16.7522 19.6933 16.0581 18.9822 16.0581 18.1036C16.0581 17.225 16.7522 16.5134 17.6082 16.5134C18.4647 16.5134 19.1593 17.2245 19.1593 18.1036C19.1593 18.9822 18.4647 19.6933 17.6082 19.6933Z"
+                        fill="#626687"
+                      />
+                    </svg>
+                  </div>
+
+                  <p
+                    class="info-group__house-details__rows__row__detail__text font-body-medium font-color-grey-3"
+                  >
+                    1 Carport
+                  </p>
+                </div>
+                <div class="info-group__house-details__rows__row__detail">
+                  <div
+                    class="info-group__house-details__rows__row__detail__icons"
+                  >
+                    <svg
+                      class="info-group__house-details__rows__row__detail__icons__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="22"
+                      viewBox="0 0 25 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.2884 4.00006H18.9324C18.2631 4.00006 17.7207 4.53671 17.7207 5.19962V8.31356H14.5759C13.9064 8.31356 13.3641 8.85003 13.3641 9.51298V12.6271H10.2192C9.5497 12.6271 9.00752 13.1644 9.00752 13.8266V17.0907H5.71171C5.39012 17.0907 5.08195 17.217 4.85482 17.4417C4.6275 17.6665 4.5 17.973 4.5 18.2902L4.50039 20.7999C4.50039 21.4634 5.04297 22.0001 5.71206 22.0001H23.2884C23.9579 22.0001 24.5 21.4634 24.5 20.7999V5.19957C24.5001 4.53671 23.9579 4.00006 23.2884 4.00006Z"
+                        fill="#626687"
+                      />
+                      <path
+                        d="M17.264 0.245361C16.9425 -0.0760555 16.4158 -0.0822327 16.0863 0.230486C10.7431 5.30554 5.65982 10.2624 0.744094 15.055C0.587683 15.2075 0.5 15.4146 0.5 15.6297V21.1877C0.5 21.6356 0.87278 22.0001 1.33294 22.0001C1.79264 22.0001 2.16608 21.6358 2.16608 21.1877V15.9657C7.00203 11.2504 12.0017 6.37801 17.2485 1.39374C17.5778 1.08107 17.5845 0.566579 17.264 0.245361Z"
+                        fill="#626687"
+                      />
+                    </svg>
+                  </div>
+
+                  <p
+                    class="info-group__house-details__rows__row__detail__text font-body-medium font-color-grey-3"
+                  >
+                    2 Floors
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="CTA">
+            <div class="tour__contact">
+              <img
+                src="img/client-4.jpeg"
+                alt="Contact avatar"
+                class="CTA__contact tour__contact__img"
+              />
+              <div class="tour__contact__data">
+                <p class="tour__contact__data__name font-subtitle">
+                  Dianne Russell
+                </p>
+                <p
+                  class="tour__contact__data__location font-label font-color-grey-2"
+                >
+                  Manchester, Kentucky
+                </p>
+              </div>
+            </div>
+            <button class="CTA__btn btn-primary">
+              <svg
+                class="CTA__btn__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M8.38436 2.4792C8.90946 2.32088 9.47295 2.34718 9.98101 2.55373C10.4891 2.76027 10.9111 3.1346 11.1768 3.6144L11.2668 3.7932L12.06 5.5584C12.3011 6.09418 12.3793 6.68902 12.285 7.26892C12.1907 7.84883 11.928 8.38822 11.5296 8.82L11.3712 8.9784L10.1184 10.146C9.89276 10.3596 10.062 11.1864 10.8792 12.6C11.6124 13.872 12.2112 14.466 12.504 14.4984H12.5556L12.6192 14.4864L15.0792 13.734C15.4098 13.6326 15.7626 13.6286 16.0954 13.7224C16.4283 13.8163 16.727 14.004 16.956 14.2632L17.0664 14.4012L18.6936 16.6572C19.0129 17.0993 19.1721 17.6369 19.1451 18.1815C19.118 18.7262 18.9063 19.2454 18.5448 19.6536L18.3984 19.8048L17.7468 20.4216C17.1627 20.9747 16.4321 21.3485 15.6418 21.4984C14.8516 21.6484 14.0348 21.5683 13.2888 21.2676C10.9668 20.3316 8.85716 18.1932 6.94076 14.874C5.02076 11.5464 4.22276 8.646 4.57916 6.162C4.68712 5.41098 4.9965 4.70324 5.47443 4.11395C5.95237 3.52467 6.58101 3.07586 7.29356 2.8152L7.52516 2.7384L8.38436 2.4792Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="CTA__btn__text font-btn font-color-white"
+                >Contact now</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="composition">
+         
+          <div class="composition__video">
+            <img class="composition__video__img" src="img/video-img.png" alt="House tour video">
+            <svg class="composition__video__play-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <g clip-path="url(#clip0_15_925)">
+                <path d="M33 24.5L18.5 13.5H18V34.5L33 24.5Z" fill="white"/>
+                <g filter="url(#filter0_b_15_925)">
+                  <path d="M48 24C48 30.3652 45.4714 36.4697 40.9706 40.9706C36.4697 45.4714 30.3652 48 24 48C17.6348 48 11.5303 45.4714 7.02944 40.9706C2.52856 36.4697 0 30.3652 0 24C0 17.6348 2.52856 11.5303 7.02944 7.02944C11.5303 2.52856 17.6348 0 24 0C30.3652 0 36.4697 2.52856 40.9706 7.02944C45.4714 11.5303 48 17.6348 48 24ZM20.37 15.279C20.1457 15.1193 19.8818 15.0244 19.6072 15.0048C19.3325 14.9851 19.0578 15.0414 18.813 15.1675C18.5683 15.2936 18.3629 15.4846 18.2195 15.7197C18.0761 15.9547 18.0002 16.2247 18 16.5V31.5C18.0002 31.7753 18.0761 32.0453 18.2195 32.2803C18.3629 32.5154 18.5683 32.7064 18.813 32.8325C19.0578 32.9586 19.3325 33.0149 19.6072 32.9952C19.8818 32.9756 20.1457 32.8807 20.37 32.721L30.87 25.221C31.0644 25.0822 31.2229 24.8991 31.3323 24.6867C31.4416 24.4743 31.4987 24.2389 31.4987 24C31.4987 23.7611 31.4416 23.5257 31.3323 23.3133C31.2229 23.1009 31.1944 23.1388 31 23L20.37 15.279Z" fill="white" fill-opacity="0.5"/>
+                </g>
+              </g>
+              <defs>
+                <filter id="filter0_b_15_925" x="-5" y="-5" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_15_925"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_15_925" result="shape"/>
+                </filter>
+                <clipPath id="clip0_15_925">
+                  <rect width="48" height="48" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          
+          <img class="composition__sofa" src="img/sofa-img.jpeg" alt="Sofa image">
+          <img class="composition__vase" src="img/vase-img.jpeg" alt="Vase image">
+          <img class="composition__chair" src="img/chair-img.jpeg" alt="Chair img">
+        </div>
+      </div>
+
+      </section>
+
+      <section class="testimonials-section">
+        <div class="heading-center">
+          <div class="heading-center__label-group">
+            <div class="heading-center__label-group__line"></div>
+            <p class="heading-center__label-group__title font-label">
+              See Our Reviews
+            </p>
+            <h2 class="heading-center__heading font-heading-2">
+              What Our Users Say About Us
+            </h2>
+          </div>
+        </div>
+
+        <div class="reviews-slider">
+          <div class="review-card">
+            <div
+              class="review-card__img-frame"
+              style="background-image: url(img/testimonial-1.jpeg)"
+            ></div>
+            <div class="review-card__feedback-box">
+              <div class="review-card__feedback-box__feedback">
+                <h4
+                  class="review-card__feedback-box__feedback__title font-heading-4"
+                >
+                  My house sold out fast!
+                </h4>
+                <p
+                  class="review-card__feedback-box__feedback__message font-label font-color-grey-3"
+                >
+                  I was finally able to sell my house quickly through Hounter by
+                  immediately setting me up with people who wanted my house. I
+                  also do not get a discount from the sale of my house. Awesome!
+                </p>
+              </div>
+
+              <div class="review-card__feedback-box__author">
+                <div class="feedback-author">
+                  <img
+                    src="img/client-4.jpeg"
+                    alt="Author avatar"
+                    class="feedback-author__img"
+                  />
+                  <div class="feedback-author__data">
+                    <p class="feedback-author__data__name font-label-semibold">
+                      Dianne Russell
+                    </p>
+                    <p
+                      class="feedback-author__data__location font-label-small font-color-grey-2"
+                    >
+                      Manchester, Kentucky
+                    </p>
+                  </div>
+                </div>
+
+                <div class="review-card__feedback-box__author__rating">
+                  <svg
+                    class="review-card__feedback-box__author__rating__star"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.9419 8.89802C22.8727 8.6944 22.7454 8.51548 22.5758 8.38335C22.4061 8.25122 22.2014 8.17167 21.9871 8.15452L15.7159 7.65628L13.0022 1.64998C12.9158 1.45653 12.7752 1.29222 12.5974 1.17688C12.4197 1.06155 12.2124 1.00012 12.0004 1C11.7885 0.999884 11.5811 1.06109 11.4033 1.17623C11.2254 1.29137 11.0846 1.45552 10.998 1.64888L8.28427 7.65628L2.01313 8.15452C1.80243 8.17121 1.601 8.24824 1.43294 8.37639C1.26488 8.50455 1.1373 8.6784 1.06547 8.87715C0.993642 9.07591 0.9806 9.29114 1.02791 9.49711C1.07522 9.70308 1.18087 9.89106 1.33223 10.0386L5.96656 14.5557L4.32755 21.6519C4.27778 21.8667 4.29373 22.0915 4.37333 22.2971C4.45293 22.5028 4.5925 22.6797 4.77393 22.8051C4.95537 22.9304 5.17028 22.9983 5.3908 23C5.61131 23.0016 5.82724 22.937 6.01056 22.8145L12.0001 18.822L17.9896 22.8145C18.177 22.9389 18.398 23.0029 18.6228 22.998C18.8477 22.993 19.0656 22.9194 19.2474 22.7869C19.4291 22.6544 19.5659 22.4695 19.6394 22.2569C19.7129 22.0444 19.7195 21.8144 19.6583 21.598L17.6464 14.559L22.6361 10.0694C22.9628 9.7746 23.0827 9.31486 22.9419 8.89802Z"
+                      fill="#F59E0B"
+                    />
+                  </svg>
+                  <h4
+                    class="review-card__feedback-box__author__rating__score font-heading-4"
+                  >
+                    4.3
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div
+              class="review-card__img-frame"
+              style="background-image: url(img/testimonial-2.jpeg)"
+            ></div>
+            <div class="review-card__feedback-box">
+              <div class="review-card__feedback-box__feedback">
+                <h4
+                  class="review-card__feedback-box__feedback__title font-heading-4"
+                >
+                  Best! I got the house I wanted through Hounter
+                </h4>
+                <p
+                  class="review-card__feedback-box__feedback__message font-label font-color-grey-3"
+                >
+                  Through this website I can get a house with the type and
+                  specifications I want very easily, without a complicated
+                  process to be able to find information on the house we want.
+                </p>
+              </div>
+
+              <div class="review-card__feedback-box__author">
+                <div class="feedback-author">
+                  <img
+                    src="img/client-7.jpeg"
+                    alt="Author avatar"
+                    class="feedback-author__img"
+                  />
+                  <div class="feedback-author__data">
+                    <p class="feedback-author__data__name font-label-semibold">
+                      Jenny Wilson
+                    </p>
+                    <p
+                      class="feedback-author__data__location font-label-small font-color-grey-2"
+                    >
+                      Manager Director
+                    </p>
+                  </div>
+                </div>
+
+                <div class="review-card__feedback-box__author__rating">
+                  <svg
+                    class="review-card__feedback-box__author__rating__star"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.9419 8.89802C22.8727 8.6944 22.7454 8.51548 22.5758 8.38335C22.4061 8.25122 22.2014 8.17167 21.9871 8.15452L15.7159 7.65628L13.0022 1.64998C12.9158 1.45653 12.7752 1.29222 12.5974 1.17688C12.4197 1.06155 12.2124 1.00012 12.0004 1C11.7885 0.999884 11.5811 1.06109 11.4033 1.17623C11.2254 1.29137 11.0846 1.45552 10.998 1.64888L8.28427 7.65628L2.01313 8.15452C1.80243 8.17121 1.601 8.24824 1.43294 8.37639C1.26488 8.50455 1.1373 8.6784 1.06547 8.87715C0.993642 9.07591 0.9806 9.29114 1.02791 9.49711C1.07522 9.70308 1.18087 9.89106 1.33223 10.0386L5.96656 14.5557L4.32755 21.6519C4.27778 21.8667 4.29373 22.0915 4.37333 22.2971C4.45293 22.5028 4.5925 22.6797 4.77393 22.8051C4.95537 22.9304 5.17028 22.9983 5.3908 23C5.61131 23.0016 5.82724 22.937 6.01056 22.8145L12.0001 18.822L17.9896 22.8145C18.177 22.9389 18.398 23.0029 18.6228 22.998C18.8477 22.993 19.0656 22.9194 19.2474 22.7869C19.4291 22.6544 19.5659 22.4695 19.6394 22.2569C19.7129 22.0444 19.7195 21.8144 19.6583 21.598L17.6464 14.559L22.6361 10.0694C22.9628 9.7746 23.0827 9.31486 22.9419 8.89802Z"
+                      fill="#F59E0B"
+                    />
+                  </svg>
+                  <h4
+                    class="review-card__feedback-box__author__rating__score font-heading-4"
+                  >
+                    4.6
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div
+              class="review-card__img-frame"
+              style="background-image: url(img/testimonial-3.jpeg)"
+            ></div>
+            <div class="review-card__feedback-box">
+              <div class="review-card__feedback-box__feedback">
+                <h4
+                  class="review-card__feedback-box__feedback__title font-heading-4"
+                >
+                  Through the Hounter, I can get a house for my self
+                </h4>
+                <p
+                  class="review-card__feedback-box__feedback__message font-label font-color-grey-3"
+                >
+                  By looking for information about what kind of house we want,
+                  we managed to get the house we wanted very quickly, and
+                  directly connected with the seller to be able to ask about the
+                  details, very helpful!
+                </p>
+              </div>
+
+              <div class="review-card__feedback-box__author">
+                <div class="feedback-author">
+                  <img
+                    src="img/client-6.jpeg"
+                    alt="Author avatar"
+                    class="feedback-author__img"
+                  />
+                  <div class="feedback-author__data">
+                    <p class="feedback-author__data__name font-label-semibold">
+                      Ronald Richards
+                    </p>
+                    <p
+                      class="feedback-author__data__location font-label-small font-color-grey-2"
+                    >
+                      Head of Marketing
+                    </p>
+                  </div>
+                </div>
+
+                <div class="review-card__feedback-box__author__rating">
+                  <svg
+                    class="review-card__feedback-box__author__rating__star"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.9419 8.89802C22.8727 8.6944 22.7454 8.51548 22.5758 8.38335C22.4061 8.25122 22.2014 8.17167 21.9871 8.15452L15.7159 7.65628L13.0022 1.64998C12.9158 1.45653 12.7752 1.29222 12.5974 1.17688C12.4197 1.06155 12.2124 1.00012 12.0004 1C11.7885 0.999884 11.5811 1.06109 11.4033 1.17623C11.2254 1.29137 11.0846 1.45552 10.998 1.64888L8.28427 7.65628L2.01313 8.15452C1.80243 8.17121 1.601 8.24824 1.43294 8.37639C1.26488 8.50455 1.1373 8.6784 1.06547 8.87715C0.993642 9.07591 0.9806 9.29114 1.02791 9.49711C1.07522 9.70308 1.18087 9.89106 1.33223 10.0386L5.96656 14.5557L4.32755 21.6519C4.27778 21.8667 4.29373 22.0915 4.37333 22.2971C4.45293 22.5028 4.5925 22.6797 4.77393 22.8051C4.95537 22.9304 5.17028 22.9983 5.3908 23C5.61131 23.0016 5.82724 22.937 6.01056 22.8145L12.0001 18.822L17.9896 22.8145C18.177 22.9389 18.398 23.0029 18.6228 22.998C18.8477 22.993 19.0656 22.9194 19.2474 22.7869C19.4291 22.6544 19.5659 22.4695 19.6394 22.2569C19.7129 22.0444 19.7195 21.8144 19.6583 21.598L17.6464 14.559L22.6361 10.0694C22.9628 9.7746 23.0827 9.31486 22.9419 8.89802Z"
+                      fill="#F59E0B"
+                    />
+                  </svg>
+                  <h4
+                    class="review-card__feedback-box__author__rating__score font-heading-4"
+                  >
+                    4.6
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="8" viewBox="0 0 56 8" fill="none">
+            <circle class="dot" cx="4" cy="4" r="4" fill="#E0E3EB"/>
+            <circle class="dot" cx="28" cy="4" r="4" fill="#E0E3EB"/>
+            <circle class="dot" cx="52" cy="4" r="4" fill="#E0E3EB"/>
+          </svg>
+        </div>
+      </section>
+
+      <section class="find-more-section">
+        <img
+        class="find-more-section__blur-bg"
+        src="img/blur-bg-find-more.png"
+        alt="Blur background image"
+      />
+<div class="find-more-section__content">
+  <div class="heading-center">
+    <div class="heading-center__label-group">
+      <div class="heading-center__label-group__line"></div>
+      <p class="heading-center__label-group__title font-label">
+        See tips and trick from our partnership
+      </p>
+      <h2 class="heading-center__heading font-heading-2">
+        Find out more about selling and buying homes
+      </h2>
+    </div>
+
+      <button id="showMoreBtn" class="find-more-section__btn btn-primary font-btn font-color-white"> 
+          More articles
+      </button>
+  </div>
+
+      <div class="articles-box">
+        <div class="articles-box__left">
+          <div class="article-small">
+            <div
+              class="img-frame"
+              style="background-image: url(img/article-1.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-4.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                    Dianne Russell
+                  </p>
+                </div>
+                <p
+                  class="info__heading__title font-subtitle"
+                >
+                  The things we need to check when we want to buy a house
+                </p>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                Buying a house? Check location, condition, price, neighborhood, amenities, potential repairs, and legal aspects thoroughly.
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  4 min read | 25 Apr 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-small">
+            <div
+              class="img-frame"
+              style="background-image: url(img/article-2.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-8.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                    Courtney Henry
+                  </p>
+                </div>
+                <p
+                  class="info__heading__title font-subtitle"
+                >
+                  7 Ways to distinguish the quality of the house we want
+                  to buy
+                </p>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                Assess house quality: inspect structure, electricals, plumbing, materials used, neighborhood, resale potential, and history.
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  6 min read | 24 Apr 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-small">
+            <div
+              class="img-frame"
+              style="background-image: url(img/article-3.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-9.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                    Darlene Robertson
+                  </p>
+                </div>
+                <p
+                  class="info__heading__title font-subtitle"
+                >
+                  The best way to know the quality of the house we want to
+                  buy
+                </p>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                Best way to judge a house? Professional inspection plus researching neighborhood, market trends, and resale history.
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  2 min read | 24 Apr 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-small hidden">
+            <div
+              class="img-frame"
+              style="background-image: url(img/testimonial-1.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-11.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                    Mia Wallace
+                  </p>
+                </div>
+                <p
+                  class="info__heading__title font-subtitle"
+                >
+                Strategies for Investing in a Volatile Market
+                </p>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                Volatile markets need diversification, patience, long-term vision, understanding trends, and strategic entry/exit points.
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  10 min read | 19 Mar 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-small hidden">
+            <div
+              class="img-frame"
+              style="background-image: url(img/testimonial-2.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-1.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                  Jackie Brown
+                  </p>
+                </div>
+                <p
+                  class="info__heading__title font-subtitle"
+                >
+                Mastering the Art of Selling Your Property in a Competitive Market
+                </p>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                Sell smart in a competitive market: stage well, highlight unique features, price competitively, market online, and leverage a skilled agent.
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  7 min read | 10 Feb 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-small hidden">
+            <div
+              class="img-frame"
+              style="background-image: url(img/lighthouse.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-2.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                  Vincent Vega
+                  </p>
+                </div>
+                <p
+                  class="info__heading__title font-subtitle"
+                >
+                Urban Living: How Smart Technologies Are Shaping Real Estate
+                </p>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                Smart tech defines urban living: IoT, AI-powered security, energy-efficient systems, virtual tours, and smart home automation shape real estate trends.
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  8 min read | 13 Jan 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="articles-box__right">
+          <div class="article-large">
+            <div
+              class="img-frame"
+              style="background-image: url(img/article-4-large.jpeg)"
+            ></div>
+            <div class="info">
+              <div class="info__heading">
+                <div class="info__heading__author">
+                  <img
+                    src="img/client-10.jpeg"
+                    alt="Author avatar"
+                    class="info__heading__author__avatar"
+                  />
+                  <p
+                    class="info__heading__author__name font-label font-color-neutral-700"
+                  >
+                    Cameron Williamson
+                  </p>
+                </div>
+                <h3
+                  class="info__heading__title font-heading-3"
+                >
+                  12 Things to know before buying a house
+                </h3>
+                <p
+                  class="info__heading__paragraph font-body-light font-color-grey-3"
+                >
+                  Want to buy a house but are unsure about what we should
+                  know, here I will try to explain what we should know and
+                  check when we want to buy a house
+                </p>
+              </div>
+
+              <div class="info__details">
+                <svg
+                  class="info__details__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM16 16C15.9075 16.0927 15.7976 16.1663 15.6766 16.2164C15.5557 16.2666 15.426 16.2924 15.295 16.2924C15.164 16.2924 15.0343 16.2666 14.9134 16.2164C14.7924 16.1663 14.6825 16.0927 14.59 16L11.3 12.71C11.2055 12.6174 11.1303 12.5069 11.0788 12.3851C11.0273 12.2632 11.0005 12.1323 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V11.59L16 14.59C16.39 14.98 16.39 15.61 16 16Z"
+                    fill="#888B97"
+                  />
+                </svg>
+                <p
+                  class="info__details__time-date font-label font-color-grey-2"
+                >
+                  8 min read | 25 Apr 2021
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+      </section>
+
+      <section class="subscribe-section">
+        <div class="subscribe-section__content">
+          <div
+          class="subscribe-bg-frame"
+          style="background-image: url(img/subscribe-bg.png)"
+        >
+          <div class="left-composition">
+            <div class="left-composition__col-1">
+              <img
+                class="left-composition__col-1__img-1"
+                style="
+                  width: 81px;
+                  height: 81px;
+                  border-radius: 24px;
+                  border: 2px white solid;
+                "
+                src="img/subscribe-1.jpeg"
+              />
+
+              <img
+                class="left-composition__col-1__img-2"
+                style="
+                  width: 36px;
+                  height: 36px;
+                  box-shadow: 0px 9px 32px rgba(89.37, 91.53, 218.88, 0.1);
+                  border-radius: 9999px;
+                  border: 2px white solid;
+                "
+                src="img/client-7.jpeg"
+              />
+            </div>
+
+            <div class="left-composition__col-2">
+              <img
+                class="left-composition__col-2__img-1"
+                style="
+                  width: 36px;
+                  height: 36px;
+                  box-shadow: 0px 9px 32px rgba(89.37, 91.53, 218.88, 0.1);
+                  border-radius: 9999px;
+                  border: 2px white solid;
+                "
+                src="img/client-5.jpeg"
+              />
+
+              <img
+                class="left-composition__col-2__img-2"
+                style="
+                  width: 54px;
+                  height: 54px;
+                  border-radius: 24px;
+                  border: 2px white solid;
+                "
+                src="img/subscribe-2.jpeg"
+              />
+            </div>
+          </div>
+
+          <div class="subscription">
+            <h2 class="subscription__heading font-heading-2">
+              Subscribe For More Info and update from Hounter
+            </h2>
+
+            <div class="subscription__email input-complex">
+              <svg
+                class="subscription__email__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M19 4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V17C2 17.7956 2.31607 18.5587 2.87868 19.1213C3.44129 19.6839 4.20435 20 5 20H19C19.7956 20 20.5587 19.6839 21.1213 19.1213C21.6839 18.5587 22 17.7956 22 17V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM19 6L12.5 10.47C12.348 10.5578 12.1755 10.604 12 10.604C11.8245 10.604 11.652 10.5578 11.5 10.47L5 6H19Z"
+                  fill="#1D4ED8"
+                />
+              </svg>
+
+              <input
+                class="subscription__email__input font-placeholder"
+                type="email"
+                placeholder="Your email here"
+                required
+                id="email"
+              />
+              <label
+                for="email"
+                class="subscription__email__label font-label-small"
+                >Field error. Please fix it</label
+              >
+              <button class="subscription__email__btn btn-primary">
+                <div class="font-btn font-color-white">
+                  <span>Subscribe Now</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="right-composition">
+            <div class="right-composition__col-1">
+              <img
+                class="right-composition__col-1__img-1"
+                style="
+                  width: 70px;
+                  height: 70px;
+                  border-radius: 24px;
+                  border: 2px white solid;
+                "
+                src="img/subscribe-3.jpeg"
+              />
+
+              <img
+                class="right-composition__col-1__img-2"
+                style="
+                  width: 36px;
+                  height: 36px;
+                  box-shadow: 0px 9px 32px rgba(89.37, 91.53, 218.88, 0.1);
+                  border-radius: 9999px;
+                  border: 2px white solid;
+                "
+                src="img/client-8.jpeg"
+              />
+            </div>
+
+            <div class="right-composition__col-2">
+              <img
+                class="right-composition__col-2__img-1"
+                style="
+                  width: 36px;
+                  height: 36px;
+                  box-shadow: 0px 9px 32px rgba(89.37, 91.53, 218.88, 0.1);
+                  border-radius: 9999px;
+                  border: 2px white solid;
+                "
+                src="img/client-11.jpeg"
+              />
+
+              <img
+                class="right-composition__col-2__img-2"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  border-radius: 24px;
+                  border: 2px white solid;
+                "
+                src="img/subscribe-4.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </section>
+
+      <section class="form-section">
+        <div class="form-section__content">
+          <div class="instructions">
+            <h3
+              class="instructions__question font-heading-3 font-color-black-form"
+            >
+              Would you like to join?
+            </h3>
+            <div class="instructions__advices">
+              <p
+                class="instructions__advices__advice font-body-light font-color-grey-3"
+              >
+                Quickly get three quotes from these local that people love in
+                online reviews.
+              </p>
+              <div class="instructions__advices__line"></div>
+              <p
+                class="instructions__advices__advice font-body-light font-color-grey-3"
+              >
+                Pick the whose estimate suits you best.
+              </p>
+              <div class="instructions__advices__line"></div>
+              <p
+                class="instructions__advices__advice font-body-light font-color-grey-3"
+              >
+                We then make sure the work i done to your complete satisfaction.
+              </p>
+            </div>
+            <div
+              class="instructions__img-frame"
+              style="background-image: url(img/form.png)"
+            ></div>
+            <img
+              src="img/blur-bg-form.png"
+              alt=""
+              class="instructions__blur-bg"
+            />
+          </div>
+  
+          <div class="form">
+            <div class="form__row">
+              <label for="name" class="form__row__label font-form">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form__row__input input font-form"
+                placeholder="Your name"
+              />
+            </div>
+  
+            <div class="form__row">
+              <label for="surname" class="form__row__label font-form"
+                >Surname</label
+              >
+              <input
+                type="text"
+                id="surname"
+                class="form__row__input input font-form"
+                placeholder="Your surname"
+              />
+            </div>
+  
+            <div class="form__row">
+              <label for="education" class="form__row__label font-form"
+                ><span id="educationLabel">Education</span></label
+              >
+                <input readonly value="" class="form__row__select-input input font-form font-color-grey-2" id="education" placeholder="Select one" required
+                />
+  
+                <button class="dropdown-btn">
+                  <svg
+                    class="dropdown-btn__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9982 10.1353C18.9987 9.87047 18.9175 9.61386 18.7687 9.40997C18.6849 9.29522 18.5821 9.20036 18.466 9.13083C18.3499 9.06131 18.2229 9.01847 18.0922 9.00479C17.9615 8.9911 17.8297 9.00683 17.7044 9.05108C17.5791 9.09533 17.4626 9.16722 17.3618 9.26265L12.0137 14.3397L6.65557 9.44397C6.5535 9.34983 6.43607 9.27953 6.31001 9.23711C6.18395 9.19469 6.05175 9.18099 5.92101 9.19679C5.79027 9.21258 5.66357 9.25757 5.54819 9.32916C5.43281 9.40075 5.33103 9.49754 5.24869 9.61396C5.15785 9.73121 5.08934 9.86853 5.04744 10.0173C5.00554 10.166 4.99117 10.323 5.00522 10.4784C5.01928 10.6337 5.06145 10.7841 5.12911 10.9201C5.19676 11.0561 5.28842 11.1747 5.39835 11.2685L11.3851 16.7422C11.5636 16.9089 11.7876 17 12.0187 17C12.2498 17 12.4737 16.9089 12.6523 16.7422L18.639 11.0759C18.7597 10.9622 18.8552 10.8178 18.9176 10.6543C18.98 10.4909 19.0076 10.3131 18.9982 10.1353Z"
+                      fill="#888B97"
+                    />
+                  </svg>
+                </button>
+  
+                <div class="dropdown">
+                
+                <div class="dropdown__options">
+                  <p class="dropdown__options__item font-form" data-value="Architect" >Architect</p>
+                  <p class="dropdown__options__item font-form" data-value="Engineer" >Engineer</p>
+                  <p class="dropdown__options__item font-form" data-value="Doctor" >Doctor</p>
+                  <p class="dropdown__options__item font-form" data-value="Designer" >Designer</p>
+                </div>
+        
+              </div>
+            
+            </div>
+  
+            <div class="form__row__textarea">
+              <label for="textarea" class="form__row__textarea__label font-form"
+                >Message</label
+              >
+              <textarea
+                name=""
+                id="textarea"
+                maxlength="500"
+                cols="30"
+                rows="10"
+                class="form__row__textarea__input input-textarea font-form"
+                placeholder="Message"
+              ></textarea>
+              <div>
+                <span class="form__row__textarea__input__charCount font-label-small font-color-grey-2" id="charCount">0/500</div>
+            </div>
+  
+            <div class="form__terms">
+              <div class="form__terms__content">
+                <input
+                type="checkbox"
+                id="checkbox"
+                class="form__terms__checkbox"
+                required
+              />
+              <div class="checkbox-styled">
+                <div class="checkbox-styled__checkmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.33339 7.99992L5.35659 11.9999L14.6667 3.33325"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <label
+                for="checkbox"
+                class="form__terms__text font-label font-color-grey-2"
+              >
+                I give consent to the processing of my personal data given in the
+                contact form above under the terms and conditions of Grid Dynamics
+                Privacy Policy.
+              </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="footer-section">
+        <div class="footer-section__content">
+          <div class="left">
+            <img
+              src="img/logo.svg"
+              alt="Hounter logo"
+              class="left__logo"
+            />
+            <div class="left__text-box">
+              <p
+                class="left__text-box__paragraph font-label font-color-grey-3"
+              >
+                We provide information about properties such as houses, villas and
+                apartments to help people find their dream home
+              </p>
+              <div class="left__text-box__icons">
+                <svg
+                  class="left__text-box__icons__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M32 16.0966C32 7.20754 24.8357 0 16 0C7.16429 0 0 7.20754 0 16.0966C0 24.1306 5.85001 30.7899 13.5 31.9984V20.751H9.43644V16.0966H13.5V12.5503C13.5 8.51683 15.8893 6.28701 19.5436 6.28701C21.2943 6.28701 23.1258 6.60177 23.1258 6.60177V10.5634H21.1071C19.1207 10.5634 18.4994 11.8037 18.4994 13.0785V16.0966H22.9364L22.2278 20.751H18.5001V32C26.1501 30.7919 32 24.1326 32 16.0966Z"
+                    fill="#1B1C57"
+                  />
+                </svg>
+  
+                <svg
+                  class="left__text-box__icons__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M28 8.3698C27.0997 8.77727 26.1472 9.04573 25.1724 9.16667C26.1968 8.54187 26.9672 7.54926 27.339 6.37501C26.3705 6.9649 25.3127 7.3788 24.2109 7.59897C23.7471 7.09247 23.189 6.68954 22.5709 6.41467C21.9529 6.13979 21.2875 5.99871 20.6155 6.00001C17.8944 6.00001 15.6925 8.26042 15.6925 11.0469C15.6905 11.4345 15.7332 11.8209 15.8195 12.1979C13.8683 12.1026 11.9577 11.5842 10.21 10.6757C8.46221 9.76715 6.91574 8.48863 5.66949 6.92188C5.23228 7.68965 5.00106 8.56566 5 9.45834C5 11.2083 5.8765 12.7552 7.2 13.6615C6.41586 13.6421 5.64779 13.4259 4.961 13.0313V13.0938C4.961 15.5417 6.661 17.5781 8.911 18.0417C8.48789 18.1591 8.05188 18.2187 7.614 18.2188C7.30329 18.2193 6.99328 18.1879 6.6885 18.125C7.314 20.1302 9.1345 21.5886 11.291 21.6302C9.53868 23.0369 7.3873 23.7973 5.175 23.7917C4.78231 23.7911 4.38998 23.7667 4 23.7187C6.25059 25.2157 8.86671 26.0076 11.537 25.9999C20.605 25.9999 25.559 18.3072 25.559 11.6354C25.559 11.4167 25.5534 11.1979 25.5434 10.9844C26.5051 10.2719 27.3368 9.38653 28 8.3698Z"
+                    fill="#1B1C57"
+                  />
+                </svg>
+  
+                <svg
+                  class="left__text-box__icons__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M16.0036 0C7.16589 0 0 7.16268 0 15.9964C0 22.545 3.94374 28.1724 9.58071 30.6503C9.53784 29.5362 9.57357 28.1938 9.85935 26.9797C10.1666 25.68 11.917 18.2601 11.917 18.2601C11.917 18.2601 11.4025 17.239 11.4025 15.7322C11.4025 13.3613 12.7743 11.5903 14.489 11.5903C15.9464 11.5903 16.6467 12.6829 16.6467 13.9897C16.6467 15.4537 15.7106 17.6389 15.232 19.667C14.8319 21.3667 16.0822 22.745 17.7611 22.745C20.7904 22.745 22.8337 18.853 22.8337 14.2397C22.8337 10.7333 20.4689 8.11248 16.175 8.11248C11.324 8.11248 8.29471 11.7331 8.29471 15.7751C8.29471 17.1676 8.7091 18.1531 9.35209 18.9101C9.645 19.26 9.68787 19.4028 9.58071 19.8027C9.50212 20.0955 9.33066 20.8025 9.25206 21.0882C9.1449 21.4953 8.81626 21.6381 8.45189 21.4881C6.21567 20.5739 5.17258 18.1317 5.17258 15.3751C5.17258 10.8333 9.00915 5.38452 16.6109 5.38452C22.7193 5.38452 26.7417 9.80495 26.7417 14.5468C26.7417 20.8239 23.2481 25.5086 18.104 25.5086C16.3752 25.5086 14.7533 24.5731 14.196 23.5162C14.196 23.5162 13.2673 27.201 13.0672 27.9152C12.7314 29.1507 12.067 30.379 11.4597 31.343C12.9328 31.7773 14.4606 31.9987 15.9964 32C24.8341 32 32 24.8372 32 16.0036C32 7.16982 24.8413 0 16.0036 0Z"
+                    fill="#1B1C57"
+                  />
+                </svg>
+  
+                <svg
+                  class="left__text-box__icons__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M16.9998 1.99983C18.3248 2.00378 19.5944 2.53187 20.5312 3.46877C21.4682 4.40567 21.9963 5.67523 22.0002 7.00019V16.9999C21.9963 18.3249 21.4682 19.5944 20.5312 20.5313C19.5944 21.4682 18.3248 21.9962 16.9998 22.0002H7.00019C5.67523 21.9962 4.40566 21.4682 3.46877 20.5313C2.53187 19.5944 2.00378 18.3249 1.99983 16.9999V7.00019C2.00378 5.67523 2.53187 4.40567 3.46877 3.46877C4.40566 2.53187 5.67523 2.00378 7.00019 1.99983H16.9998ZM16.9998 0H7.00019C3.15 0 0 3.15 0 7.00019V16.9999C0 20.85 3.15 24 7.00019 24H16.9998C20.8501 24 24 20.85 24 16.9999V7.00019C24 3.15 20.8501 0 16.9998 0Z"
+                    fill="#1B1C57"
+                  />
+                  <path
+                    d="M18.4993 7.00059C18.2026 7.00059 17.9126 6.91261 17.6659 6.74779C17.4194 6.58297 17.2271 6.3487 17.1136 6.07461C17.0001 5.80051 16.9703 5.49892 17.0282 5.20795C17.0861 4.91697 17.2289 4.64969 17.4387 4.43992C17.6485 4.23015 17.9157 4.08727 18.2067 4.02939C18.4977 3.97153 18.7993 4.00123 19.0734 4.11476C19.3474 4.22828 19.5817 4.42054 19.7466 4.66722C19.9114 4.91389 19.9994 5.20391 19.9994 5.50059C19.9998 5.69768 19.9613 5.89293 19.886 6.07511C19.8108 6.25728 19.7003 6.42281 19.561 6.56219C19.4216 6.70156 19.2561 6.81204 19.0739 6.88726C18.8917 6.9625 18.6965 7.001 18.4993 7.00059ZM11.9995 8.00023C12.7907 8.00023 13.5641 8.23484 14.2219 8.67438C14.8797 9.11393 15.3925 9.73867 15.6952 10.4696C15.998 11.2006 16.0772 12.0049 15.9228 12.7808C15.7685 13.5568 15.3875 14.2695 14.8281 14.829C14.2686 15.3884 13.5559 15.7695 12.7799 15.9238C12.004 16.0781 11.1997 15.9989 10.4687 15.6962C9.73778 15.3933 9.11304 14.8806 8.67349 14.2228C8.23395 13.565 7.99934 12.7916 7.99934 12.0004C8.00047 10.9398 8.42229 9.92305 9.17222 9.17311C9.92216 8.42317 10.939 8.00136 11.9995 8.00023ZM11.9995 6.0004C10.8128 6.0004 9.6528 6.3523 8.6661 7.01159C7.67941 7.67088 6.91037 8.60795 6.45624 9.70432C6.00211 10.8007 5.8833 12.0071 6.1148 13.171C6.34632 14.3349 6.91777 15.4039 7.75688 16.243C8.59599 17.0821 9.66509 17.6537 10.829 17.8852C11.9929 18.1166 13.1993 17.9979 14.2956 17.5437C15.392 17.0896 16.3291 16.3206 16.9884 15.3339C17.6476 14.3472 17.9995 13.1872 17.9995 12.0004C17.9995 10.4091 17.3674 8.88299 16.2422 7.75777C15.1169 6.63255 13.5909 6.0004 11.9995 6.0004Z"
+                    fill="#1B1C57"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="right">
+            <div class="right__col">
+              <p class="right__col__title font-subtitle">
+                Property
+              </p>
+              <ul class="right__col__list">
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  House
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  Apartment
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  Villa
+                </li>
+              </ul>
+            </div>
+  
+            <div class="right__col">
+              <p class="right__col__title font-subtitle">
+                Article
+              </p>
+              <ul class="right__col__list">
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  New Article
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  Popular Article
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  Most Read
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  Tips & Tricks
+                </li>
+              </ul>
+            </div>
+  
+            <div class="right__col">
+              <p class="right__col__title font-subtitle">
+                Contact
+              </p>
+              <ul class="right__col__list">
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  2464 Royal Ln. Mesa, New Jersey 45463
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  (671) 555-0110
+                </li>
+                <li
+                  class="right__col__list__item font-label font-color-grey-2"
+                >
+                  info@hounter.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

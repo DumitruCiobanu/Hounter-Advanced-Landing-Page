@@ -1,0 +1,35 @@
+.label-danger {
+  display: inline-flex;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 1px solid var(--danger-light, #FEE2E2);
+  background: var(--danger-light, #FEE2E2);
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.label-info {
+  display: inline-flex;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 1px solid var(--info-light, #DBEAFE);
+  background: var(--info-light, #DBEAFE);
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.label-primary-light {
+  display: inline-flex;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 1px solid var(--primary-light, #D1FAE5);
+  background: var(--primary-light, #D1FAE5);
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
