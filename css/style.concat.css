@@ -777,7 +777,6 @@ body {
 
 .container {
   max-width: 100vw;
-  height: 532rem;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -870,10 +869,12 @@ header {
       cursor: pointer; }
       @media only screen and (min-width: 112.5em) {
         header .nav__logo {
-          width: 12rem; } }
+          width: 11.5rem;
+          height: 3.6rem; } }
       @media only screen and (min-width: 137.5em) {
         header .nav__logo {
-          width: 13rem; } }
+          width: 11.5rem;
+          height: 3.6rem; } }
     header .nav__btns {
       width: 52rem;
       display: flex;
